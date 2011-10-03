@@ -1,0 +1,5 @@
+= Select Options
+
+== Copyright
+
+Copyright (c) 2011 Dmitriy Vorotilin. See LICENSE.txt for further details.
