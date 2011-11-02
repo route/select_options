@@ -1,5 +1,32 @@
 = Select Options
 
+Create a select tag and a series of contained option tags for the provided object and method.
+Helper would take options from model's constant and translations to them from translations file.
+
+For example with @user:
+  class User < ActiveRecord::Base
+    ROLES = %w(admin user)
+    ...
+  end
+
+in the template:
+  = f.select_with_options :role
+
+Translations in en.yml for an ActiveRecord child looks like this:
+  en:
+    activerecord:
+      composite_attributes:
+        user:
+          role:
+            admin: Administrator
+            user: User
+
+This will generate translated collection of options for select tag.
+  <select name="user[role]">
+    <option value="admin" selected="selected">Administrator</option>
+    <option value="user">User</option>
+  </select>
+
 == Copyright
 
 Copyright (c) 2011 Dmitriy Vorotilin. See LICENSE.txt for further details.
