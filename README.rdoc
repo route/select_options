@@ -8,6 +8,8 @@ Helper would take options from model's constant and translations to them from tr
 In Gemfile:
   gem 'select_options'
 
+= Usage example
+
 For example with @user:
   class User < ActiveRecord::Base
     ROLES = %w(admin user)
