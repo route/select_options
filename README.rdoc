@@ -3,6 +3,13 @@
 This gem creates a select tag and a series of contained option tags for the provided object and method.
 Helper takes options from model's constant and translates it according to the translations file (`composite_attributes` section).
 
+= Installation
+
+In Gemfile:
+  gem 'select_options'
+
+= Usage example
+
 For example with @user:
   class User < ActiveRecord::Base
     ROLES = %w(admin user)
