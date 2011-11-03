@@ -1,7 +1,7 @@
 = Select Options
 
-Create a select tag and a series of contained option tags for the provided object and method.
-Helper would take options from model's constant and translations to them from translations file.
+This gem creates a select tag and a series of contained option tags for the provided object and method.
+Helper takes options from model's constant and translates it according to the translations file (`composite_attributes` section).
 
 For example with @user:
   class User < ActiveRecord::Base
@@ -21,7 +21,7 @@ Translations in en.yml for an ActiveRecord child look like this:
             admin: Administrator
             user: User
 
-This will generate translated collection of options for select tag.
+This code will generate translated collection of options for select tag:
   <select name="user[role]">
     <option value="admin" selected="selected">Administrator</option>
     <option value="user">User</option>
