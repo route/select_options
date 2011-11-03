@@ -36,4 +36,4 @@ This code will generate translated collection of options for select tag:
 
 == Copyright
 
-Copyright (c) 2011 Dmitriy Vorotilin. See LICENSE.txt for further details.
+Copyright (c) 2011 Dmitriy Vorotilin, Evrone.com. See LICENSE.txt for further details.
