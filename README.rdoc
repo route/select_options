@@ -3,6 +3,11 @@
 Create a select tag and a series of contained option tags for the provided object and method.
 Helper would take options from model's constant and translations to them from translations file.
 
+= Installation
+
+In Gemfile:
+  gem 'select_options'
+
 For example with @user:
   class User < ActiveRecord::Base
     ROLES = %w(admin user)
