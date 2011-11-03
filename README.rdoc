@@ -10,7 +10,7 @@ For example with @user:
   end
 
 in the template:
-  = f.select_with_options :role
+  <%= f.select_with_options :role %>
 
 Translations in en.yml for an ActiveRecord child looks like this:
   en:
