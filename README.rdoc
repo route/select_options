@@ -10,14 +10,22 @@ In Gemfile:
 
 = Usage example
 
-For example with @user:
+For example, you have a model User with the field role and a constant ROLES:
   class User < ActiveRecord::Base
     ROLES = %w(admin user)
     ...
   end
 
-in the template:
+in the template you have just write:
   <%= f.select_with_options :role %>
+
+In case if you have the constant, named differt from the field name, like this:
+  class Shape < ActiveRecord::Base
+    DIMENTION_VALUES = [2, 3]
+    ...
+  end
+in the template you should use option :source
+  <%= f.select_with_options :dimention, :source => Shape::DIMENTION_VALUES %>
 
 Translations in en.yml for an ActiveRecord child look like this:
   en:
@@ -27,6 +35,13 @@ Translations in en.yml for an ActiveRecord child look like this:
           role:
             admin: Administrator
             user: User
+or like this:
+  en:
+    activerecord:
+      attributes:
+        shape:
+          dimention_2: 2D
+          dimention_3: 3D
 
 This code will generate translated collection of options for select tag:
   <select name="user[role]">
