@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = %q(select_options)
-  s.version = "1.0.0"
+  s.version = "1.1.0"
   s.date = %q(2011-10-04)
   s.authors = ["Dmitriy Vorotilin"]
   s.email = %q(mydeeptown@gmail.com)
