@@ -1,6 +1,6 @@
 module ActiveModel
   module Translation
-    # Transforms composite attribute names into a more human format.
+    # Transforms composite attribute names into a humanized format.
     # Translations in en.yml for an ActiveRecord child looks like this:
     #  en:
     #    activerecord:

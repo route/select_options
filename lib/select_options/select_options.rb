@@ -14,6 +14,7 @@ module SelectOptions
   #
   # This helper takes parameters like a rails select.
   def select_with_options(method, options = {}, html_options = {})
-    select(method, @object.attribute_options(method), options, html_options)
+    const_name = options.delete(:source)
+    select(method, @object.attribute_options(method, const_name), options, html_options)
   end
 end
