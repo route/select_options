@@ -1,5 +1,8 @@
-source :rubygems
+source "http://rubygems.org"
 
-gem 'activemodel', '>= 3.0.0'
-gem 'activerecord', '>= 3.0.0'
-gem 'actionpack', '>= 3.0.0'
+gemspec
+
+group :test do
+  gem "activesupport"
+  gem "actionpack"
+end
