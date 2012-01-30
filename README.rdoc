@@ -16,10 +16,10 @@ For example, you have a model User with the field role and a constant ROLES:
     ...
   end
 
-in the template you have just write:
+in the template you have just to write:
   <%= f.select_with_options :role %>
 
-In case if you have the constant, named differt from the field name, like this:
+In case if you have the constant, named different from the field name, like this:
   class Shape < ActiveRecord::Base
     DIMENTION_VALUES = [2, 3]
     ...
